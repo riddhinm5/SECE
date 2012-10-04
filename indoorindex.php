@@ -81,12 +81,12 @@
             $lng2 = $latlng[1];
             $pixelX2 = $pixels[0];
             $pixelY2 = $pixels[1];
-            $sqlstmt = "insert into indoormaps values(".$uid.",'".$imgpath."',".$pixelX1.",".$pixelY1.",".$pixelX2.",".intval($pixelY2).",'".floatval($lat1)."','".floatval($lng1)."','".floatval($lat2)."','".floatval($lng2)."',".$pixdist.",".$actdist.");";
+            $sqlstmt = "insert into indoormap values(".$uid.",'".$imgpath."',".$pixelX1.",".$pixelY1.",".$pixelX2.",".intval($pixelY2).",'".floatval($lat1)."','".floatval($lng1)."','".floatval($lat2)."','".floatval($lng2)."',".$pixdist.",".$actdist.");";
             $result = mysql_query($sqlstmt, $con);
           }
 
 
-          $sql = "select * from indoormaps where UserId = ".$uid.";";
+          $sql = "select * from indoormap where UserId = ".$uid.";";
           $result = mysql_query($sql, $con);
 
 

@@ -8,7 +8,7 @@ if (!$con)
 }
 
 mysql_select_db("secedb", $con);
-$select = "select * from indoormaps where UserId = ".$userid.";";
+$select = "select * from indoormap where UserId = ".$userid.";";
 $selectResult = mysql_query($select, $con);
 echo "here";
 echo $selectResult;

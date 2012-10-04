@@ -42,7 +42,7 @@
 	echo "<input type = \"hidden\" id = \"posnX\" value = '".$posnX."'>";
 	echo "<input type = \"hidden\" id = \"posnY\" value = '".$posnY."'>";
 
-	$sql = "insert into smartobj values(".$userid.",'".$smartid."','".$soname."','".$lat."','".$lng."','".$_POST['soroom']."', 0);";
+	$sql = "insert into smartobj values(".$userid.",'".$smartid."','".$soname."','".$lat."','".$lng."','".$_POST['soroom']."', 0, '');";
 
 	$sql2 = "insert into pixref values('".$smartid."','".$posnX."','".$posnY."');";
 	echo "<br>".$sql;

@@ -34,7 +34,7 @@ $smartid = $max + 1;
 echo $_POST['lat']."<br>";
 echo $_POST['lng']."<br>";
 echo $smartid;
-$sql = "insert into smartobj values('".$userid."','".$smartid."','".$_POST['name']."',".$_POST['lat'].",".$_POST['lng'].",'', 0)";
+$sql = "insert into smartobj values('".$userid."','".$smartid."','".$_POST['name']."',".$_POST['lat'].",".$_POST['lng'].",'', 0, '')";
 echo $sql ."<br>";
 $putRes = mysql_query($sql, $con);
 
