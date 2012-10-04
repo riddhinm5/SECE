@@ -14,13 +14,13 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class= "brand" href= "index.php"> SECE </a>
+          <a class= "brand" href= "index.php"> SECE Geoloc</a>
           <ul class="nav">
-            <li class="active">
+            <li>
               <a href="index.php">Home</a>
             </li>
             <li><a href="newSObj.php">Add SmartObject</a></li>
-            <li><a href="indoorcheck.php">Indoor Maps</a></li>
+            <li class="active"><a href="indoorcheck.php">Indoor Maps</a></li>
           </ul>
           <ul class = "nav pull-right"><a href = "logout.php"><li> Logout </a></li></ul>
         </div>
