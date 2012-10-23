@@ -40,12 +40,12 @@ function initApp(latLng){
 	var STREETVIEW_MAX_DISTANCE = 100;
 	streetViewService.getPanoramaByLocation(latLng, STREETVIEW_MAX_DISTANCE, function (streetViewPanoramaData, status) {
     	if (status === google.maps.StreetViewStatus.OK) {
-        	// ok
+        	// Street view is available
 			var panoramaOptions = {
 	                position: latLng,
 	                pov: {
-	                heading: 34,
-	                pitch: 10,
+	                heading: 50,
+	                pitch: 50,
 	                zoom: 1
 	                }
 	        };
@@ -62,19 +62,7 @@ function initApp(latLng){
 	        $("#pano").addClass("span6");
 		} 
 	});
-/*
-	var panoramaOptions = {
-          	position: latLng,
-                pov: {
-                heading: 34,
-                pitch: 10,
-                zoom: 1
-                }
-      	};
-     	panorama = new  google.maps.StreetViewPanorama(document.getElementById("pano"),panoramaOptions);
-                        map.setStreetView(panorama);
-	map.setStreetView(panorama);	
-*/
+
 	var marker = new google.maps.Marker({
 		map: map, 
 		position: latLng,
